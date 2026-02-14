@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buscador de CEP</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+
+    <header>
+        Buscador de CEP's
+        <button id="toggleTheme" class="themeBtn">🌙</button>
+    </header>
+
+
+    <div class="formSearch">
+      <input 
+        id="cep" 
+        type="text" 
+        maxlength="8" 
+        placeholder="Digite o CEP (somente números)" 
+      />
+      <button onclick="searchCep()">Pesquisar</button>
+      <button onclick="clearFields()">Limpar</button>
+    </div>
+
+    
+
+    <div class="infoCep">
+        <p><b>Estado :</b> <span id="estado"></span></p>
+        <p><b>Localidade :</b> <span id="localidade"></span></p>
+        <p><b>Bairro :</b> <span id="bairro"></span></p>
+        <p><b>Logradouro :</b> <span id="rua"></span></p>
+    </div>
+
+    
+    <div id="loading" class="loading hidden"></div>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2026 Meu Site. By Pedro H.</p>
+        <ul>
+          <li><a href="#">Política de Privacidade</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

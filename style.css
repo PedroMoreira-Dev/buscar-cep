@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f2f4f8;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: #2b427f;
+  color: white;
+  padding: 20px;
+}
+
+.formSearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 30px 0;
+}
+
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 200px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  background-color: #2b427f;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #1d2f5c;
+}
+
+.infoCep {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.infoCep p {
+  margin-bottom: 8px;
+}
+
+footer {
+  background-color: #2b427f;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+}
+
+footer ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+footer li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .formSearch {
+    flex-direction: column;
+  }
+
+  input, button {
+    width: 90%;
+  }
+}
+/* Loading */
+.loading {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #2b427f;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 20px auto;
+  animation: spin 1s linear infinite;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.themeBtn {
+  margin-left: 15px;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+/* Tema escuro */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode header {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .infoCep {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.dark-mode footer {
+  background-color: #1e1e1e;
+}
+
+.dark-mode button {
+  background-color: #333;
+}
+
