@@ -64,12 +64,12 @@ Caso publicado no GitHub Pages:
 ---
 ## 📂 Estrutura do Projeto
 
-📁 buscador-cep
-├── index.html
-├── style.css
-├── script.js
-├── prints/
-└── README.md
+📁 buscador-cep 
+├── index.html 
+├── style.css 
+├── script.js 
+├── prints/ 
+└── README.md 
 
 
 ---
